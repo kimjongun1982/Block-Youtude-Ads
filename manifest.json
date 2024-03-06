@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Block Youtube Ads",
+  "version": "2.0",
+  "icons": {
+    "16": "/16.png",
+    "48": "/48.png",
+    "128": "/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Block Youtube Ads",
+    "default_popup": "popup.html"
+  }
+
+}
